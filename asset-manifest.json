@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/rn-monorepo/static/js/main.64a17713.chunk.js",
+    "main.js.map": "/rn-monorepo/static/js/main.64a17713.chunk.js.map",
+    "runtime-main.js": "/rn-monorepo/static/js/runtime-main.20e50445.js",
+    "runtime-main.js.map": "/rn-monorepo/static/js/runtime-main.20e50445.js.map",
+    "static/css/2.5c17b9f1.chunk.css": "/rn-monorepo/static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.861394b3.chunk.js": "/rn-monorepo/static/js/2.861394b3.chunk.js",
+    "static/js/2.861394b3.chunk.js.map": "/rn-monorepo/static/js/2.861394b3.chunk.js.map",
+    "index.html": "/rn-monorepo/index.html",
+    "precache-manifest.1fe2939f691bba9c79daec99be2a81ee.js": "/rn-monorepo/precache-manifest.1fe2939f691bba9c79daec99be2a81ee.js",
+    "service-worker.js": "/rn-monorepo/service-worker.js",
+    "static/css/2.5c17b9f1.chunk.css.map": "/rn-monorepo/static/css/2.5c17b9f1.chunk.css.map",
+    "static/js/2.861394b3.chunk.js.LICENSE.txt": "/rn-monorepo/static/js/2.861394b3.chunk.js.LICENSE.txt",
+    "static/media/BackIcon.png": "/rn-monorepo/static/media/BackIcon.663e8c6b.png",
+    "static/media/LogoutIcon.png": "/rn-monorepo/static/media/LogoutIcon.9911b976.png",
+    "static/media/chartjs-logo.png": "/rn-monorepo/static/media/chartjs-logo.7df2d5bc.png",
+    "static/media/donut-chart.png": "/rn-monorepo/static/media/donut-chart.47bf38eb.png",
+    "static/media/icon-d3.png": "/rn-monorepo/static/media/icon-d3.15554b01.png",
+    "static/media/icon-line-chart.png": "/rn-monorepo/static/media/icon-line-chart.34014e32.png",
+    "static/media/icon_refresh.png": "/rn-monorepo/static/media/icon_refresh.102ef176.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20e50445.js",
+    "static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.861394b3.chunk.js",
+    "static/js/main.64a17713.chunk.js"
+  ]
+}
