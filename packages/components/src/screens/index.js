@@ -1,6 +1,12 @@
 import LoginScreen from './Login/Login.screen';
 import LandscapeScreen from './Landscape/Landscape.screen';
 
+import ChartsJSBar from './ChartsJS/ChartsJSBar'
+import ChartsJSLine from './ChartsJS/ChartsJSLine'
+import ChartsJSPie from './ChartsJS/ChartJSPie'
+import ChartsJSBubble from './ChartsJS/ChartJSBubble'
+
+import ChartsD3Screen from './ChartsD3/ChartsD3Screen'
 import BarChartScreen from './Chart.Bar/BarChart.screen';
 import CurveChartScreen from './Chart.Curve/CurveChart.screen';
 import PieChartScreen from './Chart.Pie/PieChart.screen';
@@ -17,6 +23,13 @@ export const useScreens = () => {
     const login = LoginScreen; 
     const landscape = LandscapeScreen; 
 
+    const chartsD3 = ChartsD3Screen;
+
+    const chartJSBar = ChartsJSBar;
+    const chartJSLine = ChartsJSLine;
+    const chartJSPie = ChartsJSPie;
+    const chartJSBubble = ChartsJSBubble;
+
     const barChart = BarChartScreen; 
     const curveChart = CurveChartScreen; 
     const pieChart = PieChartScreen; 
@@ -31,7 +44,8 @@ export const useScreens = () => {
     return { 
         login,
         landscape,
-        barChart, curveChart, pieChart, bubbleChart,
+        chartJSBar, chartJSLine, chartJSPie, chartJSBubble,
+        chartsD3, barChart, curveChart, pieChart, bubbleChart,
         usMap, worldMap,
         tableList, tableSimple,
     }

@@ -69,7 +69,7 @@ export default function PieChartScreen() {
     const RenderFooter = () => {
         if (Platform.OS == 'web') {
             return (
-                <View style={{ marginTop: '56%', width: '100%', position: 'absolute', justifyContent: 'flex-end', alignItems: 'center' }}>
+                <View style={{ marginTop: '86%', width: '100%', position: 'absolute', justifyContent: 'flex-end', alignItems: 'center' }}>
                     <View style={{ width: '80%', height: '8%', backgroundColor: '#b25900', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderRadius: 8 }}>
                         <Button style={{ maxWidth: '24%', height: '70%' }} onPress={onBar}>BAR</Button>
                         <Button style={{ maxWidth: '24%', height: '70%' }} onPress={onCurve} >CURVE</Button>

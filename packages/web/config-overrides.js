@@ -7,17 +7,19 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 
 // our packages that will now be included in the CRA build step
 const appIncludes = [
-    resolveApp('src'),
-    resolveApp('../components/src'),
-    resolveApp('../../node_modules/react-native-svg-charts'),
-    resolveApp('../../node_modules/react-native-table-component'),
-]
+  resolveApp("src"),
+  resolveApp("../components/src"),
+  resolveApp("../../node_modules/react-native-svg-charts"),
+  resolveApp("../../node_modules/react-native-table-component"),
+  resolveApp("../../node_modules/react-native-webview"),
+];
 
 module.exports = function override(config, env) {
     // allow importing from outside of src folder
     config.resolve.plugins = config.resolve.plugins.filter(
         plugin => plugin.constructor.name !== 'ModuleScopePlugin'
     )
+    
     config.module.rules[0].include = appIncludes
     config.module.rules[1] = null
     config.module.rules[2].oneOf[1].include = appIncludes

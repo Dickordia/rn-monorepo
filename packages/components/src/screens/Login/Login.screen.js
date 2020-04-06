@@ -13,7 +13,6 @@ import Button from '../../views/Button';
 import { actions } from '../../store'
 import { getNavigation } from '../../router/Router';
 
-
 function Login(props) {
     const { loading } = props
     
@@ -27,7 +26,7 @@ function Login(props) {
 
     
     const [username, setUsername] = useState(props.userID)
-    const [password, setPassword] = useState('secret')
+    const [password, setPassword] = useState('')
     const navigation = getNavigation()
 
     const onLoginPress = () => {
@@ -55,7 +54,7 @@ function Login(props) {
                     autoCorrect={false}
                     keyboardType="email-address"
                     returnKeyType="next"
-                    placeholder='Login'
+                    placeholder='username'
                     placeholderTextColor="#36454f"
                     onChangeText={onChangeTextLogin}
                     value={username}
@@ -65,7 +64,7 @@ function Login(props) {
                     tintColor={'white'}
                     style={style.input}
                     returnKeyType='go'
-                    placeholder="Password"
+                    placeholder="password"
                     placeholderTextColor="#36454f"
                     secureTextEntry
                     onChangeText={onChangeTextPassword}

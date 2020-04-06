@@ -12,6 +12,7 @@ import java.util.List;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.horcrux.svg.SvgPackage;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -29,6 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
           packages.add(new RNGestureHandlerPackage());
           packages.add(new SafeAreaContextPackage());
           packages.add(new SvgPackage());
+          packages.add(new RNCWebViewPackage());
           return packages;
         }
 

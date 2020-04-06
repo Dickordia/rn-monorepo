@@ -10,8 +10,7 @@ export const login = (username, password, onSuccess) => {
                 dispatch({
                     type: types.LOGIN,
                     payload: {
-                        userId: username,
-                        fullName: 'Clark Kent'
+                        userId: username
                     }
                 })
                 onSuccess()

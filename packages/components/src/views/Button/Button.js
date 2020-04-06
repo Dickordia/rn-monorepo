@@ -56,12 +56,21 @@ export default function Button(props: ButtonProps) {
     const aBorderWidth = image ? 0 : (selected ?  10 : 2)
     const aBorderColor = selected ? 'brown' : ((!disabled && isFocused) ? 'black' : 'white')
 
-    const RenderContent = () => {
+    const RenderImage = () => {
         if (image) {
-           return <Image style={imageStyle} source={image} />
-        } else {
-            return <Text style={[styles.text, textStyle]}>{children}</Text>
+            return <Image style={imageStyle} source={image} />
         }
+
+        return null
+    }
+
+    const RenderContent = () => {
+        return (
+            <>
+                <RenderImage />
+                <Text style={[styles.text, textStyle]}>{children}</Text>
+            </>
+        )
     }
 
     return (       

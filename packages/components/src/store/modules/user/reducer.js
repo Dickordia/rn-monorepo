@@ -2,7 +2,7 @@ import { handleActions } from 'redux-actions'
 import { LOGIN, LOGOUT } from './constants'
 const initialState = {
   loggedIn: false,
-  userId: 'sepivotak',
+  userId: '',
   fullName: ''
 }
 
