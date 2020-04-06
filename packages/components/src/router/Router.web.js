@@ -62,16 +62,7 @@ export const getNavigation = () => {
 
         if (destination == 'content') {
             aDestination = 'landscape'
-
-        } else if (destination == 'charts') {
-            aDestination = 'barChart'
-
-        } else if (destination == 'maps') {
-            aDestination = 'worldMap'
-
-        } else if (destination == 'tables') {
-            aDestination = 'tableList'
-        }
+        } 
 
         navigation.push('/' + aDestination)
     }

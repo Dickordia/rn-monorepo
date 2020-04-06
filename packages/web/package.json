@@ -2,8 +2,10 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dickordia.github.io/rn-monorepo",
   "dependencies": {
     "babel-loader": "^8.0.6",
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-art": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -14,7 +16,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

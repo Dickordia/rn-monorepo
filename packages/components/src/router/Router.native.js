@@ -74,54 +74,6 @@ function ChartsJSTabs() {
     )
 }
 
-function ChartsTabs() {
-    const Tab = createBottomTabNavigator();
-
-    return (
-        <Tab.Navigator tabBarOptions={{
-            activeTintColor: 'brown',
-            inactiveTintColor: '#536878',
-            style: { backgroundColor: '#b25900'},
-            labelStyle: {fontWeight: 'bold', fontSize: 14}
-        }}>
-            <Tab.Screen name={'BAR'} component={aScreens.barChart}/>
-            <Tab.Screen name={'CURVE'} component={aScreens.curveChart}/>
-            <Tab.Screen name={'PIE'} component={aScreens.pieChart} />
-        </Tab.Navigator>
-    )
-}
-
-function MapsTabs() {
-    const Tab = createBottomTabNavigator();
-
-    return (
-        <Tab.Navigator tabBarOptions={{
-            activeTintColor: 'brown',
-            inactiveTintColor: '#536878',
-            style: { backgroundColor: '#2a828f' },
-            labelStyle: { fontWeight: 'bold', fontSize: 14 }
-        }}> 
-            <Tab.Screen name={' '} component={aScreens.worldMap} /> 
-        </Tab.Navigator>
-    )
-}
-
-function TableTabs() {
-    const Tab = createBottomTabNavigator();
-
-    return (
-        <Tab.Navigator tabBarOptions={{
-            activeTintColor: 'brown',
-            inactiveTintColor: '#536878',
-            style: { backgroundColor: '#163f34' },
-            labelStyle: { fontWeight: 'bold', fontSize: 14 }
-        }}>
-            <Tab.Screen name={'Table 0'} component={aScreens.tableList} />
-            <Tab.Screen name={'Table 1'} component={aScreens.tableSimple} />
-        </Tab.Navigator>
-    )
-}
-
 function ContentStack() {
     const Stack = createStackNavigator()
 
@@ -144,18 +96,6 @@ function ContentStack() {
             <Stack.Screen
                 name={'chartsJS'}
                 component={ChartsJSTabs}
-            />
-            <Stack.Screen
-                name={'charts'}
-                component={ChartsTabs}
-            />
-            <Stack.Screen
-                name={'maps'}
-                component={MapsTabs}
-            />
-            <Stack.Screen
-                name={'tables'}
-                component={TableTabs}
             />
         </Stack.Navigator>
     )
